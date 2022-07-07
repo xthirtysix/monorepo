@@ -1,0 +1,10 @@
+:root {
+    --hpl-color-brand: coral;
+    --hpl-color-warn: khaki;
+    --hpl-color-error: tomato;
+    --hpl-color-success: forestgreen;
+    --hpl-color-primary-bakground: white;
+    --hpl-color-secondary-bakground: ghostwhite;
+    --hpl-color-primary-foreground: black;
+    --hpl-color-secondary-background: dimgray;
+}
