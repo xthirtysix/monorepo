@@ -1,0 +1,77 @@
+.button {
+    display: var(--hook-button-display, inline-block);
+    width: var(--hook-button-width, auto);
+    margin: var(--hook-button-margin, unset);
+    padding: var(--hook-button-padding-y, 0.5rem) var(--hook-button-padding-x, 1.25rem);
+    font-family: sans-serif;
+    font-size: var(--hook-button-font-size, var(--hpl-font-size-normal));
+    line-height: var(--hook-button-line-height, var(--hpl-line-height-normal));
+    color: var(--hook-button-color, var(--hpl-color-primary-foreground));
+    background-color: var(--hook-button-background-color, var(--hpl-color-brand));
+    border: 2px solid var(--hook-button-background-color, var(--hpl-color-brand));
+    border-radius: var(--hook-button-border-radius, 3px);
+    cursor: pointer;
+}
+
+.button--primary {
+    background-color: var(--hpl-color-primary);
+    border-color: var(--hpl-color-primary);
+}
+
+.button--secondary {
+    color: var(--hpl-color-secondary-foreground);
+    background-color: var(--hpl-color-secondary);
+    border-color: var(--hpl-color-secondary);
+}
+
+.button--destructive {
+    background-color: var(--hpl-color-error);
+    border-color: var(--hpl-color-error);
+}
+
+.button--warn {
+    background-color: var(--hpl-color-warn);
+    border-color: var(--hpl-color-warn);
+}
+
+.button--bare {
+    background-color: unset;
+    border-color: transparent;
+}
+
+.button--bare.button--primary {
+    color: var(--hpl-color-primary);
+}
+
+.button--bare.button--secondary {
+    color: var(--hpl-color-secondary-foreground);
+}
+
+.button--bare.button--brand {
+    color: var(--hpl-color-brand);
+}
+
+.button--bare.button--destructive {
+    color: var(--hpl-color-error);
+}
+
+.button--bare.button--warn {
+    color: var(--hpl-color-warn);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.4;
+}
+
+.button:disabled {
+    cursor: default;
+    color: var(--hpl-color-secondary-foreground);
+    background-color: var(--hpl-color-secondary-bakground);
+    border-color: var(--hpl-color-secondary-bakground);
+    opacity: 0.7;
+    pointer-events: none;
+}
